@@ -1,3 +1,3 @@
 # About Me
 
-An Android Project about me.
+An Android app about me.
