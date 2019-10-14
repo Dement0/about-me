@@ -16,12 +16,18 @@ class MainActivity : AppCompatActivity() {
     // Create binding
     private lateinit var binding: ActivityMainBinding
 
+    // Create an object for name
+    private val myName: MyName = MyName("Ilker Aslan")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
 
         // Create binding object to connect the layout with the activity
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        // Set binding object myName attribute to myName
+        binding.myName = myName
 
         // Set click listener for the button
         //findViewById<Button>(R.id.done_button).setOnClickListener { addNickname(it) }
@@ -34,7 +40,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             // Access the nickname and button using the binding object
-            binding.nicknameText.text = binding.nicknameEdit.text
+
+            //binding.nicknameText.text = binding.nicknameEdit.text
+            myName?.nickname = nicknameEdit.text.toString()
+
+            invalidateAll()
+
             binding.nicknameEdit.visibility = View.GONE
             binding.doneButton.visibility = View.GONE
             binding.nicknameText.visibility = View.VISIBLE
