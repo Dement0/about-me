@@ -29,4 +29,6 @@
         \nSuspendisse vulputate mi sed feugiat lobortis. Donec pharetra mi massa.
         \nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\n
     </string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
+    <string name="done">Done</string>
 </resources>
