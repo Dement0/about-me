@@ -9,7 +9,6 @@
     </style>
 
     <style name="NameStyle">
-        <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_marginTop">@dimen/small_margin_top</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:paddingTop">@dimen/small_padding_top</item>
